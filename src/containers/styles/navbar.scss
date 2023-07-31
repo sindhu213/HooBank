@@ -1,0 +1,64 @@
+@use "../../globals/mixins" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(70rem, 90%);
+  margin: 1.5rem auto;
+  font-size: var(--fs-sm);
+
+  img {
+    max-height: 1.75rem;
+  }
+
+  &__list > ul {
+    gap: min(3rem, 5vw);
+    display: flex;
+  }
+
+  a {
+    color: var(--clr-primary-100);
+  }
+
+  &__list--mobile,
+  .navigation-icon {
+    display: none;
+  }
+}
+
+//MOBILE DESIGN
+@include breakpoint(small) {
+  .navbar {
+    position: relative;
+
+    &__list {
+      display: none;
+    }
+
+    &__list--mobile {
+      display: flex;
+
+      ul {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--clr-primary-600);
+        inset: 0 0 0 60%;
+        padding: min(20vh, 5rem) 1rem;
+      }
+
+      li {
+        padding: max(1rem, 2.5vh);
+      }
+    }
+
+    .navigation-icon {
+      cursor: pointer;
+      width: 1.75rem;
+      display: block;
+      z-index: 999;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

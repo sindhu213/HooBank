@@ -1,0 +1,21 @@
+@use "colors" as *;
+@use "typography" as *;
+
+:root {
+  @each $color, $shade-map in $colors {
+    @each $shade, $value in $shade-map {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $screen-size, $clamp-value in $type-scale {
+    --fs-#{$screen-size}: #{$clamp-value};
+  }
+
+  @each $priority, $ff in $font-family {
+    --ff-#{$priority}: #{$ff};
+  }
+
+  font-family: var(--ff-primary);
+  background-color: var(--clr-primary-700);
+}

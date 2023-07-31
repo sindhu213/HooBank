@@ -1,0 +1,23 @@
+@use 'functions' as *;
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.1;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+}
+
+$type-scale: (
+  sm: clamped(0.75rem, 0.95rem),
+  base: clamped(1rem, 1.2rem),
+  md: clamped(1.2rem, 1.44rem),
+  lg: clamped(1.44rem, 1.73rem),  
+  xl: clamped(1.73rem, 2.07rem),
+  xxl: clamped(2.07rem, 2.49rem),
+  xxxl: clamped(2.49rem, 2.99rem),
+);
+
+$font-family: (
+  primary: "'Poppins', sans-serif",
+);

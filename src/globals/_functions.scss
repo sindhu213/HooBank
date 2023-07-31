@@ -1,0 +1,17 @@
+@use 'sass:math';
+@use 'breakpoints' as *;
+
+$default-min-bp: map-get($breakpoints, small);
+$default-max-bp: map-get($breakpoints, large);
+
+@function rnd($number){
+    @return calc(math.round($number*100)/100);
+}
+
+@function clamped($min-fs, $max-fs, $min-bp: $default-min-bp, $max-bp: $default-max-bp){
+    $slope: math.div($max-fs - $min-fs, $max-bp - $min-bp);
+    $slope-vw: rnd($slope*100);
+    $intercept: rnd($min-fs - $slope * $min-bp);
+
+    @return clamp(#{$min-fs}, #{$slope-vw}vw + #{$intercept}, #{$max-fs})
+}
