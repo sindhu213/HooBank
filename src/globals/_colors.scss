@@ -1,12 +1,28 @@
 $colors: (
   primary: (
-    700: #0F101E,
-    600: #2f325e,
-    400: #5CE1E6,
-    200: #FFFFFF,
-    100: #ffffffaf,
+    700: hsl(236, 33%, 9%),
+    600: hsl(0, 0%, 22%),
+    500: hsl(236, 33%, 28%),
+    400: hsl(182, 73%, 63%),
+    200: hsl(0, 0%, 100%),
+    100: hsla(0, 0%, 100%, 0.686),
   ),
+
   secondary: (
-    500: radial-gradient(circle, #def9fa 0%, #33bbcf 50%),
+    500: radial-gradient(
+      circle, 
+      hsl(182, 74%, 93%) 0%, 
+      hsl(188, 62%, 51%) 50%),
+  
+    600: linear-gradient(
+      125.17deg, 
+      hsl(0, 0%, 15%) 0%, 
+      hsl(245, 29%, 9%) 100%),
+
+    700: linear-gradient(
+      153.47deg,
+      hsla(0, 0%, 100%, 0) -341.94%,
+      hsl(258, 29%, 9%) 95.11%
+    ),
   ),
 );
