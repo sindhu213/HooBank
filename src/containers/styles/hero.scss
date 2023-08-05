@@ -6,6 +6,10 @@
     width: min(80rem, 95%);
     margin: 3rem 0 0 auto;
     color: var(--clr-primary-100);
+
+    & > article{
+        margin-top: 3.5vw;
+    }
 }
 
 .card{
@@ -34,6 +38,7 @@
         max-width: 100%;
         font-weight: 900;
         line-height: 1.5;
+        color: var(--clr-primary-200);
 
         & span{
             background-image: var(--clr-secondary-500);
@@ -44,8 +49,9 @@
 
     &__description{
         font-size: var(--fs-sm);
-        line-height: 1.5;
+        line-height: 1.75;
         width: min(90%, 25rem);
+        text-align: justify;
     }
 }
 

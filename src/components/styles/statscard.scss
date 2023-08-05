@@ -1,0 +1,32 @@
+@use "../../globals/mixins" as *;
+
+.stats{
+    display: flex;
+    align-items: center;
+    gap: max(1rem,1.5vw);
+    width: fit-content;
+
+    &__count{
+        color: var(--clr-primary-200);
+        font-size: var(--fs-md);
+        font-weight: 800;
+    }
+
+    &__description{
+        font-size: var(--fs-sm);
+        background-image: var(--clr-secondary-500);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+}
+
+
+@include breakpoint(medium){
+    .stats{
+        box-shadow: 10px 10px 29px 0px var(--clr-primary-800);
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 0.75rem;
+    }
+}   
