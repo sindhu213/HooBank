@@ -1,0 +1,37 @@
+.f-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  gap: 1rem;  
+  padding: 0.75rem 0.5rem;
+
+  &:hover{
+    background: var(--clr-secondary-600);
+    box-shadow: 0px 20px 100px -10px var(--clr-primary-800);
+    border-radius: 1rem;
+  }
+
+  &__icon { 
+    margin: auto 0;
+    & > img {
+      padding: 0.75rem;
+      border-radius: 50%;
+      background-color: var(--clr-primary-300);
+    }
+  }
+
+  &__info {
+    padding: 0 1rem;
+    &__title {
+      color: var(--clr-primary-200);
+      font-weight: bold;
+      line-height: 2.1;
+    }
+
+    &__content {
+      font-size: var(--fs-sm);
+      line-height: 1.5;
+      color: var(--clr-primary-100);
+    }
+  }
+}
+

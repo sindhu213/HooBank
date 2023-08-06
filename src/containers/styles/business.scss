@@ -1,0 +1,14 @@
+@use "../../globals/mixins" as *;
+
+.business{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: min(70rem, 90%);
+    margin: 5rem auto;
+    gap: min(1.5rem,10%);
+
+    &__feature{
+        display: grid;
+        gap: 0.75rem;
+    }
+}

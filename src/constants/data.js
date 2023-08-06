@@ -195,3 +195,21 @@ export const clients = [
     logo: dropbox,
   },
 ];
+
+export const cardDetails = [
+  {
+    id: "data-1",
+    heading: "You do the business, we'll handle the money.",
+    description: "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market."
+  },
+  {
+    id: "data-2",
+    heading: "Easily control your billing & invoicing.",
+    description: "Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat."
+  },
+  {
+    id: "data-3",
+    heading: "Find a better card deal in few easy steps.",
+    description: "Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau."
+  }
+]

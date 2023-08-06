@@ -1,4 +1,3 @@
-
 import "./styles/statscard.scss";
 import PropTypes from "prop-types";
 
@@ -12,11 +11,7 @@ const StatsCard = ({ object }) => {
 };
 
 StatsCard.propTypes = {
-  object: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }),
+  object: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default StatsCard;

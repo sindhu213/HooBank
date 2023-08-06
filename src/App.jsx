@@ -1,4 +1,4 @@
-import { Navbar, Hero, Stats } from './containers';
+import { Navbar, Hero, Stats, Business } from './containers';
 import './app.scss';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
       <Navbar/>
       <Hero />
       <Stats />
+      <Business />
     </>
   )
 }

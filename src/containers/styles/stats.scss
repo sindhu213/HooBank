@@ -1,16 +1,9 @@
 @use "../../globals/mixins" as *;
 
 .stats-component {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: min(70rem, 90%);
     margin: max(1rem, 4.5%) auto; 
     gap: 1rem;
-}
-
-
-@include breakpoint(medium){
-    .stats-component{
-        flex-direction: column;
-    }
 }

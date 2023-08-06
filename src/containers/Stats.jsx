@@ -1,6 +1,6 @@
 import { stats } from "../constants/data";
 import { StatsCard } from "../components";
-import "./styles/stats.scss"
+import "./styles/stats.scss";
 
 const Stats = () => {
   return (

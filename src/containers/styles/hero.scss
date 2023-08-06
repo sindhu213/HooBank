@@ -21,7 +21,7 @@
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        background: var(--clr-secondary-600);
+        background: var(--clr-secondary-700);
         text-transform: uppercase;
         width: fit-content;
         padding-inline: 0.5rem;
@@ -41,7 +41,7 @@
         color: var(--clr-primary-200);
 
         & span{
-            background-image: var(--clr-secondary-500);
+            background-image: var(--clr-secondary-400);
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -51,7 +51,6 @@
         font-size: var(--fs-sm);
         line-height: 1.75;
         width: min(90%, 25rem);
-        text-align: justify;
     }
 }
 
