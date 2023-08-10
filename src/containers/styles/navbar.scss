@@ -30,8 +30,6 @@
 //MOBILE DESIGN
 @include breakpoint(small) {
   .navbar {
-    position: relative;
-
     &__list {
       display: none;
     }
@@ -42,13 +40,14 @@
       ul {
         position: fixed;
         flex-direction: column;
-        background-color: var(--clr-primary-600);
-        inset: 0 0 0 60%;
+        background-color: var(--clr-primary-500);
+        border-bottom-left-radius: 1rem;
+        inset: 0 0 60% 60%;
         padding: min(20vh, 5rem) 1rem;
       }
 
       li {
-        padding: max(1rem, 2.5vh);
+        padding: max(1rem, 2.5vh) 1rem;
       }
     }
 
@@ -56,9 +55,9 @@
       cursor: pointer;
       width: 1.75rem;
       display: block;
-      z-index: 999;
-      position: absolute;
-      right: 0;
+      z-index: 9999;
+      position: fixed;
+      right: 20px;
     }
   }
 }

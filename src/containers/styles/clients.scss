@@ -1,0 +1,17 @@
+.clients {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: min(70rem, 90%);
+  margin-inline: auto;
+  gap: 2rem;
+
+  &__container {
+    flex: 1;
+  }
+
+  .client {
+    width: 125px;
+    object-fit: contain;
+  }
+}

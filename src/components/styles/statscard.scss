@@ -1,22 +1,23 @@
 @use "../../globals/mixins" as *;
 
-.stats{
-    display: flex;
-    align-items: center;
-    gap: max(1rem,1.5vw);
-    width: fit-content;
+.stats {
+  display: flex;
+  align-items: center;
+  gap: max(1rem, 1.5vw);
+  width: fit-content;
 
-    &__count{
-        color: var(--clr-primary-200);
-        font-size: var(--fs-md);
-        font-weight: 800;
-    }
+  &__count {
+    color: var(--clr-primary-200);
+    font-size: var(--fs-md);
+    font-weight: 800;
+  }
 
-    &__description{
-        font-size: var(--fs-sm);
-        background-image: var(--clr-secondary-400);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-transform: uppercase;
-    }
+  &__description {
+    font-size: var(--fs-sm);
+    background-image: var(--clr-secondary-400);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
 }

@@ -1,19 +1,18 @@
-.CTA{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1.5rem;
-    line-height: 1.75;
-    width: 80%;
+.CTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  line-height: 1.75;
 
-    &__heading{
-        font-size: var(--fs-xl);
-        font-weight: bolder;
-        color: var(--clr-primary-200);
-    }
+  &__heading {
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    color: var(--clr-primary-200);
+  }
 
-    &__description{
-        color: var(--clr-primary-100);
-        font-size: var(--fs-sm);
-    }
+  &__description {
+    color: var(--clr-primary-100);
+    font-size: var(--fs-sm);
+  }
 }

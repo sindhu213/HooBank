@@ -1,0 +1,19 @@
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: min(70rem, 90%);
+  margin: 10vh auto;
+  gap: min(5rem, 10%);
+  padding: 5vh 5vw;
+  background: var(--clr-secondary-600);
+  box-shadow: 0px 20px 100px -10px var(--clr-primary-800);
+  border-radius: 1rem;
+
+  &__getStarted {
+    flex: 1;
+    min-width: 150px;
+    max-width: calc(20% - 10px);
+  }
+}

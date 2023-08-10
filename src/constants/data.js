@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -90,63 +105,78 @@ export const stats = [
 
 export const footerLinks = [
   {
+    id: "1",
     title: "Useful Links",
     links: [
       {
+        id: "1",
         name: "Content",
         link: "https://www.hoobank.com/content/",
       },
       {
+        id: "2",
         name: "How it Works",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
+        id: "3",
         name: "Create",
         link: "https://www.hoobank.com/create/",
       },
       {
+        id: "4",
         name: "Explore",
         link: "https://www.hoobank.com/explore/",
       },
       {
+        id: "5",
         name: "Terms & Services",
         link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
   },
   {
+    id: "2",
     title: "Community",
     links: [
       {
+        id: "1",
         name: "Help Center",
         link: "https://www.hoobank.com/help-center/",
       },
       {
+        id: "2",
         name: "Partners",
         link: "https://www.hoobank.com/partners/",
       },
       {
+        id: "3",
         name: "Suggestions",
         link: "https://www.hoobank.com/suggestions/",
       },
       {
+        id: "4",
         name: "Blog",
         link: "https://www.hoobank.com/blog/",
       },
       {
+        id: "5",
         name: "Newsletters",
         link: "https://www.hoobank.com/newsletters/",
       },
     ],
   },
   {
+    id: "3",
     title: "Partner",
     links: [
       {
+        id: "1",
         name: "Our Partner",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
+        id: "2",
         name: "Become a Partner",
         link: "https://www.hoobank.com/become-a-partner/",
       },
@@ -200,16 +230,25 @@ export const cardDetails = [
   {
     id: "data-1",
     heading: "You do the business, we'll handle the money.",
-    description: "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market."
+    description:
+      "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
   },
   {
     id: "data-2",
     heading: "Easily control your billing & invoicing.",
-    description: "Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat."
+    description:
+      "Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.",
   },
   {
     id: "data-3",
     heading: "Find a better card deal in few easy steps.",
-    description: "Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau."
-  }
-]
+    description:
+      "Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.",
+  },
+  {
+    id: "data-4",
+    heading: "Let's try our service now!",
+    description:
+      "Everything you need to accept card payments and grow your business anywhere on the planet.",
+  },
+];

@@ -1,22 +1,13 @@
-.billing {
+.card-deal {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: min(70rem, 90%);
   margin: 15vh auto;
   gap: min(1.5rem, 10%);
 
-  &__container > img {
+  &__img-container > img {
     object-fit: contain;
-    max-height: 22.5rem;
+    max-height: 20rem;
     width: 100%;
-  }
-
-  &__content {
-    display: flex;
-    gap: 1rem;
-
-    & > img {
-      cursor: pointer;
-    }
   }
 }

@@ -11,7 +11,7 @@ const StatsCard = ({ object }) => {
 };
 
 StatsCard.propTypes = {
-  object: PropTypes.objectOf(PropTypes.string).isRequired,
+  object: PropTypes.objectOf(PropTypes.string.isRequired).isRequired,
 };
 
 export default StatsCard;

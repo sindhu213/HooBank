@@ -1,4 +1,4 @@
-import { Navbar, Hero, Stats, Business, Billing } from './containers';
+import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonial, Client, ServiceTrial, Footer, } from './containers';
 import './app.scss';
 
 function App() {
@@ -9,6 +9,11 @@ function App() {
       <Stats />
       <Business />
       <Billing /> 
+      <CardDeal />
+      <Testimonial />
+      <Client />
+      <ServiceTrial />
+      <Footer />
     </>
   )
 }

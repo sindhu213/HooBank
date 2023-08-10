@@ -1,0 +1,34 @@
+.feedback {
+  display: grid;
+  gap: 5vh;
+  line-height: 1.5;
+  font-size: var(--fs-sm);
+  padding: 1.5rem 1.5rem;
+
+  &:hover {
+    background: var(--clr-secondary-600);
+    box-shadow: 0px 20px 100px -10px var(--clr-primary-800);
+    border-radius: 1rem;
+  }
+
+  &__content {
+    color: var(--clr-primary-200);
+  }
+
+  &__user {
+    display: flex;
+    gap: 1rem;
+    figure > img {
+      height: 2rem;
+    }
+  }
+
+  &__user__info {
+    h3 {
+      color: var(--clr-primary-200);
+    }
+    p {
+      color: var(--clr-primary-100);
+    }
+  }
+}

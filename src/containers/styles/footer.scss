@@ -1,0 +1,64 @@
+@use "../../globals/mixins" as *;
+
+.main-container {
+  background-color: var(--clr-primary-900);
+  padding-top: 2rem;
+  font-size: var(--fs-sm);
+  line-height: 2.5;
+
+  * {
+    color: var(--clr-primary-100);
+  }
+
+  ul {
+    color: var(--clr-primary-200);
+  }
+}
+
+.footer-grid {
+  display: grid;
+  width: min(70rem, 90%);
+  margin-inline: auto;
+  gap: 1rem;
+  grid-template-areas:
+    "one two three four"
+    "five five five five";
+}
+
+.footer-component:nth-child(1) {
+  grid-area: one;
+}
+
+.footer-component:nth-child(2) {
+  grid-area: two;
+}
+
+.footer-component:nth-child(3) {
+  grid-area: three;
+}
+
+.footer-component:nth-child(4) {
+  grid-area: four;
+}
+
+.footer-component:nth-child(5) {
+  grid-area: five;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+
+  .footer-icons > img {
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+}
+
+@include breakpoint(56.67rem) {
+  .footer-grid {
+    grid-template-areas:
+      "one one one"
+      "two three four"
+      "five five five";
+  }
+}

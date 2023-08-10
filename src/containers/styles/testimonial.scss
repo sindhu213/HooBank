@@ -1,0 +1,29 @@
+.testimonial {
+  display: grid;
+  width: min(70rem, 90%);
+  margin: 15vh auto 10vh auto;
+  gap: min(1.5rem, 10%);
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: min(5rem, 10vw);
+    line-height: 1.5;
+
+    h1 {
+      color: var(--clr-primary-200);
+      font-size: var(--fs-xl);
+      font-weight: 900;
+    }
+    p {
+      color: var(--clr-primary-100);
+    }
+  }
+
+  &__unit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
