@@ -3,7 +3,7 @@
 .main-container {
   background-color: var(--clr-primary-900);
   padding-top: 2rem;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-x-sm);
   line-height: 2.5;
 
   * {
@@ -60,5 +60,9 @@
       "one one one"
       "two three four"
       "five five five";
+  }
+
+  .footer-component:nth-child(5){
+    justify-content: center;
   }
 }

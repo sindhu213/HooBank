@@ -17,7 +17,7 @@ const Footer = () => {
               {section.title}
               {section.links.map((unit) => (
                 <li key={unit.key}>
-                  <a href={unit.link}>{unit.name}</a>
+                  <a href="">{unit.name}</a>
                 </li>
               ))}
             </ul>

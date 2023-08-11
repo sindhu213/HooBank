@@ -9,7 +9,8 @@ a, a:visited, a:active{
 }
 
 $type-scale: (
-  sm: clamped(0.75rem, 0.95rem),
+  x-sm: clamped(0.75rem, 0.95rem),
+  sm: clamped(0.85rem, 0.95rem),
   base: clamped(1rem, 1.2rem),
   md: clamped(1.2rem, 1.44rem),
   lg: clamped(1.44rem, 1.73rem),  
